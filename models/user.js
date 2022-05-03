@@ -1,34 +1,42 @@
 const { Schema, Types } = require('mongoose');
 
-const assignmentSchema = new Schema(
+const userSchema = new Schema(
   {
     assignmentId: {
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
     },
-    assignmentName: {
+    username: {
+      type: String,
+      unique: true,
+      required: true,
+      trim: true,
+    },
+    email: {
       type: String,
       required: true,
-      maxlength: 50,
-      minlength: 4,
-      default: 'Unnamed assignment',
+      unique: true,        
+      required: 'Email address is required',
+      validate: [validateEmail, 'Please fill a valid email address'],
+      match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
     },
-    score: {
-      type: Number,
-      required: true,
-      default: () => Math.floor(Math.random() * (100 - 70 + 1) + 70),
+    thoughts:[
+     {
+
     },
-    createdAt: {
-      type: Date,
-      default: Date.now,
+  ],
+    friends:[ 
+      {
+
     },
+  ],
   },
   {
     toJSON: {
-      getters: true,
+      virtuals: true,
     },
     id: false,
   }
 );
 
-module.exports = assignmentSchema;
+module.exports = userSchema;
