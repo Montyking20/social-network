@@ -1,7 +1,7 @@
 {
   "name": "social-network",
   "version": "1.0.0",
-  "description": "Social Media API",
+  "description": "social-network API",
   "main": "index.js",
   "scripts": {
     "watch": "nodemon index.js",
