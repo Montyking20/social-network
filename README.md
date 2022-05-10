@@ -1,4 +1,4 @@
-# Social Media API
+# Social-Networking
 <div id="top"></div>
 
 <!-- TABLE OF CONTENTS -->
