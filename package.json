@@ -1,11 +1,12 @@
 {
-  "name": "du-proj-social-network-api",
+  "name": "social-network",
   "version": "1.0.0",
   "description": "Social Media API",
   "main": "index.js",
   "scripts": {
     "watch": "nodemon index.js",
-    "test": "echo 1"
+    "test": "echo 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
