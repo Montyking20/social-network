@@ -1,5 +1,5 @@
 // ObjectId() method for converting thoughtId string into an ObjectId for querying database
-const {Thought } = require('../models/Thought');
+const Thought = require('../models/Thought');
 
 module.exports = {
 
