@@ -105,7 +105,7 @@ git clone git@github.com:Montyking20/social-network.git
 
 Once installed run `npm run start` and the API will be ready. Please view the VIDEO for usage demo
 
-![VIDEO](https://drive.google.com/file/d/16cFR4j-KCiHB_RUXfuu0hu_B3iHCev8O/view?usp=sharing))
+[VIDEO](https://drive.google.com/file/d/16cFR4j-KCiHB_RUXfuu0hu_B3iHCev8O/view?usp=sharing)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
