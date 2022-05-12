@@ -1,7 +1,8 @@
 const { default: mongoose } = require('mongoose');
 const { Schema, model } = require('mongoose');
 
-
+// To do all
+// Schema to create Thought model
 const reactionSchema = new Schema(
   {
     reactionId: {
@@ -19,16 +20,18 @@ const reactionSchema = new Schema(
     },
     createdAt: {
       type: Date,
-      default: Date.now       
+      default: Date.now,
     },
-  },  
+  },
   {
-      toJSON: {
-        getters:true,
-        virtuals: true
-      },
+    toJSON: {
+      getters: true,
+      virtuals: true
     },
+  }
 );
 
+
 const Reactions = model('reactions', reactionSchema);
+
 module.exports = Reactions;
